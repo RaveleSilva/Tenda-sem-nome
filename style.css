@@ -1,0 +1,336 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(102, 79, 52);
+    width: 100vw;
+}
+
+header{
+    height: 30vh;
+    background-image: linear-gradient(rgb(177,140,95), #7d561e);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: 2px solid wheat;
+    border-bottom: 2px solid wheat;
+}
+
+nav{
+    display: flex;
+    gap: 5vw;
+}
+
+#logo{
+    color: white;
+}
+
+nav > a{
+    font-size: 30px;
+    text-decoration: none;
+    color: wheat;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+}
+
+nav > a:hover{
+    color: rgba(169, 169, 169, 0.253);
+    transition: 0.5s;
+}
+
+.home{
+    height: 70vh;
+    background-image: url(img/background2.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hometext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    height: 100%;
+    max-width: 60%;
+    text-align: center;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+}
+
+#hometext > h1{
+    font-size: 5vw;
+}
+
+.row{
+    height: 3px;
+    background-color: rgb(250, 226, 200);
+    width: 200px;
+}
+
+#hometext > p{
+    font-size: 2.5vw;
+    font-family: 'Dosis', sans-serif;
+    width: 75%;
+    line-height: 50px;
+}
+
+div > img{
+    width: 400px;
+    height: 100%;
+    border-radius: 3px;
+}
+
+.apresentation{
+    width: 100%;
+}
+
+.apresentation:nth-child(odd){
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding:20px 0px 20px 0px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #6a481a;
+}
+
+.apresentation:nth-child(even){
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    padding:20px 0px 20px 0px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #311d02;
+}
+
+#apresentation-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+    color: wheat;
+    width: 400px;
+    font-family: 'Dosis', sans-serif;
+    margin: 20px;
+}
+
+#apresentation-text > h2{
+    font-size: 2.5rem;
+}
+
+#apresentation-text > p{
+    font-size: 1.5rem;
+    line-height: 45px;
+}
+
+.apresentation button{
+    text-align: center;
+    margin: auto;
+    font-size: 1.2rem;
+    padding: 10px 50px 10px 50px;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 2px;
+    background-color: transparent;
+    color: rgb(250, 226, 200);
+    border: 1px solid rgb(250, 226, 200);
+    border-radius: 3px;
+}
+
+.apresentation button:hover{
+    color: brown;
+    background-color:rgb(250, 226, 200);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.apresentation-img{
+    height: 70vh;
+    text-align: center;
+}
+
+.about{
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+}
+
+#about-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    align-items: center;
+    gap: 100px;
+}
+
+#about-picture h1{
+    font-family: 'Merriweather', serif;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: rgb(98, 97, 97);
+}
+
+#about-text{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#about-text h2{
+    font-size: 3em;
+    font-family: 'Merriweather', serif;
+    font-weight: bolder;
+}
+
+#about-text p{
+    font-size: 1.1em;
+    font-family: sans-serif;
+}
+
+#about-text button{
+    background-color: #f95363;
+    height: 65px;
+    width: 250px;
+    margin: 0;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Merriweather', serif;
+    font-size: 1.5em;
+    color: wheat;
+}
+
+#about-text button:hover{
+    cursor: pointer;
+    background-color: rgb(251, 53, 53);
+    transition: 0.5s;
+}
+
+.relates{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px 0px 30px;
+    font-family: 'Dosis',sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    gap: 50px;
+}
+
+#relates-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#relates-tittle{
+    text-align: center;
+    color: white;
+}
+
+#relates-tittle p{
+    font-size: 0.5em;
+    color: rgb(217, 213, 213);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 40vw;
+    min-width: 400px;
+    padding: 20px;
+}
+
+.card p{
+    font-size: 0.8em;
+    color: #cfa572;
+}
+
+#card-header{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+
+#card-header p{
+    color: white;
+}
+
+#card-header strong{
+    color: rgb(227, 141, 3);
+}
+
+#card-img{
+    width: 70px;
+    height: 70px;
+    border: 5px solid #311d02;
+    border-radius: 50%;
+}
+
+#card-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+footer{
+    background-color: #170e00;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 30px;
+    color: white;
+    font-family: 'Dosis',sans-serif;
+}
+
+#footer-tittle{
+    text-align: center;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#footer-tittle p{
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+#social{
+    display: flex;
+    gap: 50px;
+}
+
+#social img{
+    width: 50px;
+    height: auto;
+}
+
+#extra{
+    display: flex;
+    gap: 20px;
+}
+
+#extra a {
+    text-decoration: none;
+    color: white;
+}
+
+#extra a:hover{
+    text-decoration: underline;
+}
+
